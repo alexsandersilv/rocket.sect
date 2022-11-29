@@ -1,2 +1,2 @@
 # rocket.sect
-explorer desafio final
+Desafio Explorer Stage 02 
