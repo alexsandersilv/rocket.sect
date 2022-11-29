@@ -1,0 +1,102 @@
+:root {
+  --background: #2F2E41;
+  --green: #00BFA6;
+  --gray: #C2C2C2;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+}
+
+h1 {
+  color: var(--white);
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h1,
+h1>span {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+p,
+span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p>span {
+  font-weight: bold;
+}
+
+span {
+  color: var(--green);
+}
+
+p {
+  color: var(--gray);
+}
+
+#root {
+  width: 1092px;
+  margin: 0 auto;
+}
+
+nav {
+  font-family: 'JetBrains Mono', monospace;
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 64px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+footer {
+  color: var(--white);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: medium;
+  text-align: center;
+
+  margin-top: 157px;
+}
+
+.line {
+  margin: 0 auto 27px;
+  width: 568px;
+  height: 1px;
+
+  background: var(--green);
+}
+
+.padlock {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+/* 
+M-Y 70
+M-X 99
+*/
