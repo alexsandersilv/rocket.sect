@@ -9,7 +9,6 @@ const Footer = () => (
 
   <img className="padlock" src="/images/padlock.svg" alt="Imagem de um cadeado branco" />
   </>
-
 )
 
 export default Footer;
