@@ -14,13 +14,13 @@ const ServicesPage = () => (
         <div className="planos">
 
 
-        <Plan title="Basico">
-          <span>
-            Para quem está começando nessa area.
-          </span>
+          <Plan title="Básico">
+            <span>
+              Para quem está começando nessa area.
+            </span>
             <br />
             <br />
-        O plano inclui
+            O plano inclui
             <br />
             <br />
             <ul>
@@ -30,7 +30,7 @@ const ServicesPage = () => (
               <li>4 RAM</li>
               <li>50G </li>
               <li className="block">Métricas em Tempo Real</li>
-              <li className="block">Compratilhamento ( Para Times )</li>
+              <li className="block">Compartilhamento ( Para Times )</li>
               <li className="block">3 Servidores</li>
               <li className="block">VPN</li>
               <li className="block">Acesso Vitalicio</li>
@@ -39,13 +39,13 @@ const ServicesPage = () => (
             <strong>R$: 50,00 </strong>
           </Plan>
 
-          
+
           <Plan title="Normal">
             <span>
-              Para Times e Projetos de medio porte
+              Para Times e Projetos de médio porte
             </span>
             <br />
-                        <br />
+            <br />
 
             O plano inclui
             <br />
@@ -57,7 +57,7 @@ const ServicesPage = () => (
               <li>5 RAM</li>
               <li>300G</li>
               <li>Métricas em Tempo Real</li>
-              <li>Compratilhamento ( Para Times )</li>
+              <li>Compartilhamento ( Para Times )</li>
               <li>3 Servidores</li>
               <li>VPN</li>
               <li className="block">Acesso Vitalicio</li>
@@ -82,7 +82,7 @@ const ServicesPage = () => (
               <li>10 RAM</li>
               <li>1 TB </li>
               <li>Métricas em Tempo Real</li>
-              <li>Compratilhamento ( Para Times )</li>
+              <li>Compartilhamento ( Para Times )</li>
               <li>3 Servidores</li>
               <li>VPN</li>
               <li>Acesso Vitalicio</li>
