@@ -8,6 +8,50 @@
   margin-top: 101px;
 }
 
+#home img {
+  animation: showImageSliding 2.5s;
+}
+
 #home section {
   text-align: center;
+}
+
+#home .title {
+  color: var(--tc-title);
+  font-size: 3.6rem;
+  line-height: 4rem;
+}
+
+#home .whoami {
+  animation: ping 2.5s;
+}
+
+#home p {
+  margin: 3rem;
+}
+
+@keyframes showImageSliding {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes ping {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
 }

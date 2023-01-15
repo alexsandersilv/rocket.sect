@@ -1,5 +1,4 @@
-"use client";
-
+import padlock from '../../assets/img/padlock.svg';
 const Footer = () => (
   <>
   <footer>
@@ -7,7 +6,7 @@ const Footer = () => (
     Feito com 💚 por <a href="https://github.com/alexsandersilv" target="_blank">Alex Sander</a>
   </footer>
 
-  <img className="padlock" src="/images/padlock.svg" alt="Imagem de um cadeado branco" />
+  <img className="padlock" src={padlock} alt="Imagem de um cadeado branco" />
   </>
 )
 

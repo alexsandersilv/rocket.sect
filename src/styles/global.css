@@ -1,8 +1,20 @@
+/*
+ff font-family;
+
+tc text-color;
+*/
+
 :root {
-  --background: #2F2E41;
-  --green: #00BFA6;
-  --gray: #C2C2C2;
-  --white: #fff;
+  font-size: 62.5%;
+
+  --ff-title: 'JetBrains Mono', monospace;
+  --ff-normal: 'Open Sans', sans-serif;
+
+  --tc-title: #fff;
+  --tc-primary: #C2C2C2;
+  --tc-secondary: #00BFA6;
+
+  --bg-color: #2F2E41;
 }
 
 * {
@@ -12,18 +24,15 @@
 }
 
 body {
-  background: var(--background);
+  font-size: 1.6rem;
+  background: var(--bg-color);
 }
 
-h1 {
-  color: var(--white);
-  font-size: 36px;
-  line-height: 40px;
-}
-
+.title,
 h1,
+h2,
 h1>span {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--ff-title);
 }
 
 p,
@@ -36,15 +45,15 @@ p>span {
 }
 
 span {
-  color: var(--green);
+  color: var(--tc-secondary);
 }
 
 p {
-  color: var(--gray);
+  color: var(--tc-primary);
 }
 
 #root {
-  width: 1092px;
+  width: 70vw;
   margin: 0 auto;
 }
 
@@ -65,7 +74,7 @@ nav ul {
 }
 
 a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
 }
 
@@ -74,7 +83,7 @@ a:hover {
 }
 
 footer {
-  color: var(--white);
+  color: white;
   font-family: 'JetBrains Mono', monospace;
   font-weight: medium;
   text-align: center;
@@ -87,7 +96,7 @@ footer {
   width: 568px;
   height: 1px;
 
-  background: var(--green);
+  background: var(--tc-secondary);
 }
 
 .padlock {

@@ -1,6 +1,6 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Plan from "../components/Plan";
+import Footer from "../components/server/Footer";
+import Navbar from "../components/server/Navbar";
+import PlanContainer from "../components/server/PlansContainer";
 
 import '../styles/pages/services.css';
 
@@ -8,89 +8,65 @@ const ServicesPage = () => (
   <>
     <Navbar />
     <main id="services">
-      <img src="/images/logo.svg" alt="Logo da Rocket Sect" />
       <section>
-        <h1 style={{ textAlign: "center" }}>Planos</h1>
-        <div className="planos">
+        <PlanContainer
+          title="Basic"
+          description="Free plan for 30-day trial, no card required"
+          enabledFunctions={[
+            "VPN",
+            "DDoS Protection",
+            "4 RAM",
+            "500 G"
+          ]}
+          disabledFunctions={[
+            "Metrics in real time",
+            "Server Options",
+            "XSS Protection",
+            "IP Block",
+            "Malicious File Blocking",
+            "Server Sharing ( For Teams )"
+          ]}
+          prince={"Free Trial"}
+        />
 
+        <PlanContainer
+          title="Normal"
+          description="For medium-sized projects"
+          enabledFunctions={[
+            "VPN",
+            "Server Options",
+            "DDoS Protection",
+            "XSS Protection",
+            "Metrics in real time",
+            "Malicious File Blocking",
+            "IP Block",
+            "Server Sharing ( For Teams )",
+            "10 RAM",
+            "1.5 T"
+          ]}
+          disabledFunctions={[]}
+          prince={"$ 15,00"}
+        />
 
-          <Plan title="Básico">
-            <span>
-              Para quem está começando nessa area.
-            </span>
-            <br />
-            <br />
-            O plano inclui
-            <br />
-            <br />
-            <ul>
-              <li>Crypt MD5</li>
-              <li>Proteção a DDoS</li>
-              <li>Proteção a XSS</li>
-              <li>4 RAM</li>
-              <li>50G </li>
-              <li className="block">Métricas em Tempo Real</li>
-              <li className="block">Compartilhamento ( Para Times )</li>
-              <li className="block">3 Servidores</li>
-              <li className="block">VPN</li>
-              <li className="block">Acesso Vitalicio</li>
-            </ul>
-            <br />
-            <strong>R$: 50,00 </strong>
-          </Plan>
+        <PlanContainer
+          title="Complete"
+          description="For large and ambitious projects"
+          enabledFunctions={[
+            "VPN",
+            "Server Options",
+            "DDoS Protection",
+            "XSS Protection",
+            "Metrics in real time",
+            "Malicious File Blocking",
+            "IP Block",
+            "Server Sharing ( For Teams )",
+            "15 RAM",
+            "3 T"
+          ]}
+          disabledFunctions={[]}
+          prince={"$ 30,00"}
+        />
 
-
-          <Plan title="Normal">
-            <span>
-              Para Times e Projetos de médio porte
-            </span>
-            <br />
-            <br />
-
-            O plano inclui
-            <br />
-            <br />
-            <ul>
-              <li>Crypt MD5</li>
-              <li>Proteção a DDoS</li>
-              <li>Proteção a XSS</li>
-              <li>5 RAM</li>
-              <li>300G</li>
-              <li>Métricas em Tempo Real</li>
-              <li>Compartilhamento ( Para Times )</li>
-              <li>3 Servidores</li>
-              <li>VPN</li>
-              <li className="block">Acesso Vitalicio</li>
-            </ul>
-            <br />
-            <strong>R$: 129,99 </strong>
-          </Plan>
-
-          <Plan title="Avançado">
-            <span>
-              Para alcançar o maior desemprenho
-            </span>
-            <br />
-            <br />
-            O plano inclui
-            <br />
-            <br />
-            <ul>
-              <li>Crypt MD5</li>
-              <li>Proteção a DDoS</li>
-              <li>Proteção a XSS</li>
-              <li>10 RAM</li>
-              <li>1 TB </li>
-              <li>Métricas em Tempo Real</li>
-              <li>Compartilhamento ( Para Times )</li>
-              <li>3 Servidores</li>
-              <li>VPN</li>
-              <li>Acesso Vitalicio</li>
-            </ul>
-            <br />
-            <strong>R$: 329,97 </strong>
-          </Plan>
-        </div>
       </section>
     </main>
     <Footer />
