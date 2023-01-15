@@ -1,0 +1,71 @@
+#services section {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#services section .plan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  width: 33%;
+  padding: 5rem;
+
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px 0;
+  border: 1px solid white;
+  background: white;
+
+  animation: showPlans 3s;
+}
+
+
+#services .title {
+  color: black;
+  font-size: 3.6rem;
+  line-height: 4rem;
+}
+
+
+#services ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  list-style-type: none;
+}
+
+#services ul li {
+  margin-left: 1rem;
+}
+.blocked {
+  text-decoration: line-through;
+}
+
+#services button {
+  margin-top: 3rem;
+  border: none;
+  border-radius: .4rem;
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  color: white;
+  transition: filter .5s;
+  cursor: pointer;
+} 
+
+#services button:hover {
+  filter: saturate(2);
+}
+@keyframes showPlans {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
